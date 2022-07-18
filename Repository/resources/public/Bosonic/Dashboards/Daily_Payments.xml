@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dashboardModelResource exportedWithPermissions="false">
+    <folder>/public/Bosonic/Dashboards</folder>
+    <name>Daily_Payments</name>
+    <version>7</version>
+    <label>Daily Payments</label>
+    <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+    <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+    <defaultFoundation>default</defaultFoundation>
+    <foundation>
+        <id>default</id>
+        <layout>layout</layout>
+        <wiring>wiring</wiring>
+        <components>components</components>
+    </foundation>
+    <resourceDescriptor>
+        <type>wiring</type>
+        <id>wiring</id>
+    </resourceDescriptor>
+    <resourceDescriptor>
+        <type>layout</type>
+        <id>layout</id>
+    </resourceDescriptor>
+    <resourceDescriptor>
+        <type>components</type>
+        <id>components</id>
+    </resourceDescriptor>
+    <resourceDescriptor>
+        <type>adhocDataView</type>
+        <id>/temp/tmpAdv_1657050777382_hyhe</id>
+    </resourceDescriptor>
+    <resourceDescriptor>
+        <type>adhocDataView</type>
+        <id>/temp/tmpAdv_1657051430764_qfzy</id>
+    </resourceDescriptor>
+    <resourceDescriptor>
+        <type>adhocDataView</type>
+        <id>/temp/tmpAdv_1657052369475_bvye</id>
+    </resourceDescriptor>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="wiring.data" xsi:type="fileResource">
+            <folder>/public/Bosonic/Dashboards/Daily_Payments_files</folder>
+            <name>wiring</name>
+            <version>1</version>
+            <label>wiring</label>
+            <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+            <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+            <fileType>json</fileType>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="layout" xsi:type="contentResource">
+            <folder>/public/Bosonic/Dashboards/Daily_Payments_files</folder>
+            <name>layout</name>
+            <version>1</version>
+            <label>layout</label>
+            <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+            <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+            <fileType>html</fileType>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="components.data" xsi:type="fileResource">
+            <folder>/public/Bosonic/Dashboards/Daily_Payments_files</folder>
+            <name>components</name>
+            <version>1</version>
+            <label>components</label>
+            <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+            <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+            <fileType>dashboardComponent</fileType>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" xsi:type="adhocDataView">
+            <folder>/public/Bosonic/Dashboards/Daily_Payments_files</folder>
+            <name>tmpAdv_1657050777382_hyhe</name>
+            <version>1</version>
+            <label>tmpAdv_1657050777382_hyhe</label>
+            <description>Dashboard visualization.</description>
+            <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+            <updateDate>2022-07-05T17:27:08.107-03:00</updateDate>
+            <dataSource>
+                <uri>/public/Bosonic/Domains/dom_Payments_Minutes</uri>
+            </dataSource>
+            <resource>
+                <localResource exportedWithPermissions="false"
+                    dataFile="topicJRXML.data" xsi:type="fileResource">
+                    <folder>/public/Bosonic/Dashboards/Daily_Payments_files/tmpAdv_1657050777382_hyhe_files</folder>
+                    <name>topicJRXML</name>
+                    <version>0</version>
+                    <label>topicJRXML</label>
+                    <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+                    <updateDate>2022-07-05T17:27:08.107-03:00</updateDate>
+                    <fileType>jrxml</fileType>
+                </localResource>
+            </resource>
+            <resource>
+                <localResource exportedWithPermissions="false"
+                    dataFile="stateXML.data" xsi:type="fileResource">
+                    <folder>/public/Bosonic/Dashboards/Daily_Payments_files/tmpAdv_1657050777382_hyhe_files</folder>
+                    <name>stateXML</name>
+                    <version>0</version>
+                    <label>stateXML</label>
+                    <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+                    <updateDate>2022-07-05T17:27:08.107-03:00</updateDate>
+                    <fileType>xml</fileType>
+                </localResource>
+            </resource>
+            <alwaysPromptControls>false</alwaysPromptControls>
+            <controlsLayout>1</controlsLayout>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" xsi:type="adhocDataView">
+            <folder>/public/Bosonic/Dashboards/Daily_Payments_files</folder>
+            <name>tmpAdv_1657051430764_qfzy</name>
+            <version>1</version>
+            <label>tmpAdv_1657051430764_qfzy</label>
+            <description>Dashboard visualization.</description>
+            <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+            <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+            <dataSource>
+                <uri>/public/Bosonic/Domains/dom_Payments_Minutes</uri>
+            </dataSource>
+            <inputControl>
+                <localResource exportedWithPermissions="false" xsi:type="inputControl">
+                    <folder>/public/Bosonic/Dashboards/Daily_Payments_files/tmpAdv_1657051430764_qfzy_files</folder>
+                    <name>sDate_1</name>
+                    <version>0</version>
+                    <label>sDate</label>
+                    <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+                    <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+                    <type>4</type>
+                    <mandatory>false</mandatory>
+                    <readOnly>false</readOnly>
+                    <visible>true</visible>
+                    <query>
+                        <localResource exportedWithPermissions="false" xsi:type="query">
+                            <folder>/public/Bosonic/Dashboards/Daily_Payments_files/tmpAdv_1657051430764_qfzy_files/sDate_1_files</folder>
+                            <name>sDate_1</name>
+                            <version>0</version>
+                            <label>sDate</label>
+                            <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+                            <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+                            <language>domain</language>
+                            <queryString>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;query xmlns="http://www.jaspersoft.com/2007/SL/XMLSchema"&gt;
+  &lt;groupList&gt;
+    &lt;group columnName="sDate" id="sDate" /&gt;
+  &lt;/groupList&gt;
+  &lt;queryFields&gt;
+    &lt;queryField id="date" resourceId="date" /&gt;
+    &lt;queryField id="date_1" resourceId="date" /&gt;
+    &lt;queryField expression="Concatenate(MonthName(date_1), ' ', DayNumber(date_1))" id="sDate" resourceId="sDate" /&gt;
+  &lt;/queryFields&gt;
+  &lt;resources&gt;
+    &lt;memory id="default"&gt;
+      &lt;fieldList&gt;
+        &lt;field id="sDate" dataSetExpression="Concatenate(MonthName(date), ' ', DayNumber(date))" type="java.lang.String" /&gt;
+      &lt;/fieldList&gt;
+      &lt;sortList&gt;
+        &lt;sortColumn columnName="sDate" /&gt;
+      &lt;/sortList&gt;
+      &lt;source&gt;
+        &lt;jdbcTable id="public_fact_payments_minutes" datasourceId="local_repo1" datasourceTableName="fact_payments_minutes" maxRows="200001" schemaAlias="public"&gt;
+          &lt;fieldList&gt;
+            &lt;field id="date" type="java.sql.Timestamp" /&gt;
+          &lt;/fieldList&gt;
+          &lt;groupList&gt;
+            &lt;group columnName="date" id="date" /&gt;
+          &lt;/groupList&gt;
+        &lt;/jdbcTable&gt;
+      &lt;/source&gt;
+    &lt;/memory&gt;
+  &lt;/resources&gt;
+  &lt;sortList&gt;
+    &lt;sortColumn columnName="sDate" /&gt;
+  &lt;/sortList&gt;
+&lt;/query&gt;
+
+</queryString>
+                            <dataSource>
+                                <uri>/public/Bosonic/Domains/dom_Payments_Minutes</uri>
+                            </dataSource>
+                        </localResource>
+                    </query>
+                    <queryVisibleColumn>sDate</queryVisibleColumn>
+                    <queryValueColumn>sDate</queryValueColumn>
+                </localResource>
+            </inputControl>
+            <resource>
+                <localResource exportedWithPermissions="false"
+                    dataFile="topicJRXML.data" xsi:type="fileResource">
+                    <folder>/public/Bosonic/Dashboards/Daily_Payments_files/tmpAdv_1657051430764_qfzy_files</folder>
+                    <name>topicJRXML</name>
+                    <version>0</version>
+                    <label>topicJRXML</label>
+                    <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+                    <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+                    <fileType>jrxml</fileType>
+                </localResource>
+            </resource>
+            <resource>
+                <localResource exportedWithPermissions="false"
+                    dataFile="stateXML.data" xsi:type="fileResource">
+                    <folder>/public/Bosonic/Dashboards/Daily_Payments_files/tmpAdv_1657051430764_qfzy_files</folder>
+                    <name>stateXML</name>
+                    <version>0</version>
+                    <label>stateXML</label>
+                    <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+                    <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+                    <fileType>xml</fileType>
+                </localResource>
+            </resource>
+            <alwaysPromptControls>false</alwaysPromptControls>
+            <controlsLayout>1</controlsLayout>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" xsi:type="adhocDataView">
+            <folder>/public/Bosonic/Dashboards/Daily_Payments_files</folder>
+            <name>tmpAdv_1657052369475_bvye</name>
+            <version>1</version>
+            <label>tmpAdv_1657052369475_bvye</label>
+            <description>Dashboard visualization.</description>
+            <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+            <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+            <dataSource>
+                <uri>/public/Bosonic/Domains/dom_Payments_Minutes</uri>
+            </dataSource>
+            <inputControl>
+                <localResource exportedWithPermissions="false" xsi:type="inputControl">
+                    <folder>/public/Bosonic/Dashboards/Daily_Payments_files/tmpAdv_1657052369475_bvye_files</folder>
+                    <name>sDate_1</name>
+                    <version>0</version>
+                    <label>sDate</label>
+                    <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+                    <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+                    <type>4</type>
+                    <mandatory>false</mandatory>
+                    <readOnly>false</readOnly>
+                    <visible>true</visible>
+                    <query>
+                        <localResource exportedWithPermissions="false" xsi:type="query">
+                            <folder>/public/Bosonic/Dashboards/Daily_Payments_files/tmpAdv_1657052369475_bvye_files/sDate_1_files</folder>
+                            <name>sDate_1</name>
+                            <version>0</version>
+                            <label>sDate</label>
+                            <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+                            <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+                            <language>domain</language>
+                            <queryString>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;query xmlns="http://www.jaspersoft.com/2007/SL/XMLSchema"&gt;
+  &lt;groupList&gt;
+    &lt;group columnName="sDate" id="sDate" /&gt;
+  &lt;/groupList&gt;
+  &lt;queryFields&gt;
+    &lt;queryField id="date" resourceId="date" /&gt;
+    &lt;queryField expression="Concatenate(MonthName(date), ' ', DayNumber(date))" id="sDate" resourceId="sDate" /&gt;
+  &lt;/queryFields&gt;
+  &lt;resources&gt;
+    &lt;memory id="default"&gt;
+      &lt;fieldList&gt;
+        &lt;field id="sDate" dataSetExpression="Concatenate(MonthName(date), ' ', DayNumber(date))" type="java.lang.String" /&gt;
+      &lt;/fieldList&gt;
+      &lt;sortList&gt;
+        &lt;sortColumn columnName="sDate" /&gt;
+      &lt;/sortList&gt;
+      &lt;source&gt;
+        &lt;jdbcTable id="public_fact_payments" datasourceId="local_repo1" datasourceTableName="fact_payments" maxRows="200001" schemaAlias="public"&gt;
+          &lt;fieldList&gt;
+            &lt;field id="date" type="java.sql.Timestamp" /&gt;
+          &lt;/fieldList&gt;
+          &lt;groupList&gt;
+            &lt;group columnName="date" id="date" /&gt;
+          &lt;/groupList&gt;
+        &lt;/jdbcTable&gt;
+      &lt;/source&gt;
+    &lt;/memory&gt;
+  &lt;/resources&gt;
+  &lt;sortList&gt;
+    &lt;sortColumn columnName="sDate" /&gt;
+  &lt;/sortList&gt;
+&lt;/query&gt;
+
+</queryString>
+                            <dataSource>
+                                <uri>/public/Bosonic/Domains/dom_Payments_Minutes</uri>
+                            </dataSource>
+                        </localResource>
+                    </query>
+                    <queryVisibleColumn>sDate</queryVisibleColumn>
+                    <queryValueColumn>sDate</queryValueColumn>
+                </localResource>
+            </inputControl>
+            <resource>
+                <localResource exportedWithPermissions="false"
+                    dataFile="topicJRXML.data" xsi:type="fileResource">
+                    <folder>/public/Bosonic/Dashboards/Daily_Payments_files/tmpAdv_1657052369475_bvye_files</folder>
+                    <name>topicJRXML</name>
+                    <version>0</version>
+                    <label>topicJRXML</label>
+                    <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+                    <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+                    <fileType>jrxml</fileType>
+                </localResource>
+            </resource>
+            <resource>
+                <localResource exportedWithPermissions="false"
+                    dataFile="stateXML.data" xsi:type="fileResource">
+                    <folder>/public/Bosonic/Dashboards/Daily_Payments_files/tmpAdv_1657052369475_bvye_files</folder>
+                    <name>stateXML</name>
+                    <version>0</version>
+                    <label>stateXML</label>
+                    <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+                    <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+                    <fileType>xml</fileType>
+                </localResource>
+            </resource>
+            <reports>
+                <localResource exportedWithPermissions="false" xsi:type="reportUnit">
+                    <folder>/public/Bosonic/Dashboards/Daily_Payments_files/tmpAdv_1657052369475_bvye_files</folder>
+                    <name>dashboardReport</name>
+                    <version>1</version>
+                    <label>dashboardReport</label>
+                    <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+                    <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+                    <mainReport>
+                        <localResource exportedWithPermissions="false"
+                            dataFile="mainReportJrxml.data" xsi:type="fileResource">
+                            <folder>/public/Bosonic/Dashboards/Daily_Payments_files/tmpAdv_1657052369475_bvye_files/dashboardReport_files</folder>
+                            <name>mainReportJrxml</name>
+                            <version>0</version>
+                            <label>mainReportJrxml</label>
+                            <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+                            <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+                            <fileType>jrxml</fileType>
+                        </localResource>
+                    </mainReport>
+                    <resource>
+                        <localResource exportedWithPermissions="false"
+                            dataFile="stateXML.data" xsi:type="fileResource">
+                            <folder>/public/Bosonic/Dashboards/Daily_Payments_files/tmpAdv_1657052369475_bvye_files/dashboardReport_files</folder>
+                            <name>stateXML</name>
+                            <version>0</version>
+                            <label>stateXML</label>
+                            <creationDate>2022-07-15T15:43:12.084-03:00</creationDate>
+                            <updateDate>2022-07-05T17:26:16.789-03:00</updateDate>
+                            <fileType>xml</fileType>
+                        </localResource>
+                    </resource>
+                    <alwaysPromptControls>false</alwaysPromptControls>
+                    <controlsLayout>1</controlsLayout>
+                </localResource>
+            </reports>
+            <alwaysPromptControls>false</alwaysPromptControls>
+            <controlsLayout>1</controlsLayout>
+        </localResource>
+    </resource>
+</dashboardModelResource>

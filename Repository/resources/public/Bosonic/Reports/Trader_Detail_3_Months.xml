@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reportUnit exportedWithPermissions="false">
+    <folder>/public/Bosonic/Reports</folder>
+    <name>Trader_Detail_3_Months</name>
+    <version>21</version>
+    <label>Trader Detail 3 Months</label>
+    <description></description>
+    <creationDate>2022-07-15T15:43:13.444-03:00</creationDate>
+    <updateDate>2022-07-15T10:13:29.294-03:00</updateDate>
+    <mainReport>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="main_jrxml.data" xsi:type="fileResource">
+            <folder>/public/Bosonic/Reports/Trader_Detail_3_Months_files</folder>
+            <name>main_jrxml</name>
+            <version>1</version>
+            <label>Main jrxml</label>
+            <creationDate>2022-07-15T15:43:13.444-03:00</creationDate>
+            <updateDate>2022-07-15T10:13:29.188-03:00</updateDate>
+            <fileType>jrxml</fileType>
+        </localResource>
+    </mainReport>
+    <dataSource>
+        <uri>/public/Bosonic/Datasource/Warehouse</uri>
+    </dataSource>
+    <inputControl>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" xsi:type="inputControl">
+            <folder>/public/Bosonic/Reports/Trader_Detail_3_Months_files</folder>
+            <name>trader</name>
+            <version>1</version>
+            <label>trader</label>
+            <description>Mail of the trader</description>
+            <creationDate>2022-07-15T15:43:13.444-03:00</creationDate>
+            <updateDate>2022-07-15T10:13:29.294-03:00</updateDate>
+            <type>2</type>
+            <mandatory>false</mandatory>
+            <readOnly>false</readOnly>
+            <visible>true</visible>
+            <dataType>
+                <localResource exportedWithPermissions="false" xsi:type="dataType">
+                    <folder>/public/Bosonic/Reports/Trader_Detail_3_Months_files/trader_files</folder>
+                    <name>myDatatype</name>
+                    <version>0</version>
+                    <label>myDatatype</label>
+                    <creationDate>2022-07-15T15:43:13.444-03:00</creationDate>
+                    <updateDate>2022-07-15T10:13:29.294-03:00</updateDate>
+                    <type>1</type>
+                    <strictMin>false</strictMin>
+                    <strictMax>false</strictMax>
+                </localResource>
+            </dataType>
+        </localResource>
+    </inputControl>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="cherry.jpg.data" xsi:type="fileResource">
+            <folder>/public/Bosonic/Reports/Trader_Detail_3_Months_files</folder>
+            <name>cherry.jpg</name>
+            <version>1</version>
+            <label>cherry.jpg</label>
+            <creationDate>2022-07-15T15:43:13.444-03:00</creationDate>
+            <updateDate>2022-07-14T10:13:18.121-03:00</updateDate>
+            <fileType>img</fileType>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false"
+            dataFile="logo_small.png.data" xsi:type="fileResource">
+            <folder>/public/Bosonic/Reports/Trader_Detail_3_Months_files</folder>
+            <name>logo_small.png</name>
+            <version>1</version>
+            <label>logo_small.png</label>
+            <creationDate>2022-07-15T15:43:13.444-03:00</creationDate>
+            <updateDate>2022-07-14T10:22:17.332-03:00</updateDate>
+            <fileType>img</fileType>
+        </localResource>
+    </resource>
+    <alwaysPromptControls>true</alwaysPromptControls>
+    <controlsLayout>1</controlsLayout>
+</reportUnit>

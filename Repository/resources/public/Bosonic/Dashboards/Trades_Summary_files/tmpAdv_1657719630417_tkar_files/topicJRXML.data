@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="adhocReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="30" uuid="78551641-89ed-49cb-a84d-9e85fa8f4e21">
+	<property name="adhoc.topic.escape.variable.chars"/>
+	<property name="adhoc.metadata.version" value="40"/>
+	<property name="has.modified.presentation" value="false"/>
+	<property name="base.datasource.version" value="4"/>
+	<property name="use.datasource.presentation" value="true"/>
+	<property name="com.jaspersoft.jasperserver.api.metadata.jasperreports.domain.TopicReportUnit" value="/temp/sl_topic_4a9afc4d-87e9-4621-9989-1af9edf23832"/>
+	<parameter name="Month_1" class="net.sf.jasperreports.types.date.TimestampRange">
+		<defaultValueExpression><![CDATA[com.jaspersoft.jasperserver.api.common.util.rd.DateRangeFactory.getInstance("MONTH",java.sql.Timestamp.class)]]></defaultValueExpression>
+	</parameter>
+	<queryString language="domain">
+		<![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<query xmlns="http://www.jaspersoft.com/2007/SL/XMLSchema">
+  <queryFields>
+    <queryField id="assetpair" />
+    <queryField id="counterparty1" />
+    <queryField id="custodian" />
+    <queryField id="Month" />
+    <queryField id="platform" />
+  </queryFields>
+</query>]]>
+	</queryString>
+	<field name="assetpair" class="java.lang.String">
+		<property name="adhoc.chosen.tree.order">
+			<![CDATA[{"Month":4,"custodian":3,"counterparty1":2,"assetpair":1,"platform":5}]]>
+		</property>
+		<property name="resourceId" value="fact_trades.assetpair"/>
+		<property name="adhoc.chosen.tree.uri" value="/assetpair"/>
+		<property name="kind" value="DIMENSION"/>
+		<property name="adhoc.chosen.tree.labels" value="[]"/>
+		<property name="adhoc.tree.labels" value="[]"/>
+		<property name="semantic.tree.uri" value="/assetpair"/>
+		<property name="semantic.tree.sort.order">
+			<![CDATA[{"asset1":1,"asset2":2,"assetpair":3,"counterparty1":4,"custodian":5,"datetime":6,"filled":7,"Month":8,"orderid":9,"ordstatus":10,"platform":11,"qty1":12,"qty2":13,"rate":14,"rref":15,"side":16,"tif":17,"timestamp":18}]]>
+		</property>
+		<property name="slIsTableAsList" value="false"/>
+		<property name="aggregateType" value="java.lang.Long"/>
+		<property name="previous.display" value="assetpair"/>
+		<property name="adhoc.display" value="assetpair"/>
+		<property name="adhoc.chosen.tree.is.flattened" value="false"/>
+		<property name="adhoc.tree.uri" value="/assetpair"/>
+		<property name="semantic.item.label" value="assetpair"/>
+		<property name="defaultAgg" value="CountAll"/>
+		<property name="aggregateExpression" value="CountAll(assetpair)"/>
+	</field>
+	<field name="counterparty1" class="java.lang.String">
+		<property name="resourceId" value="fact_trades.counterparty1"/>
+		<property name="adhoc.chosen.tree.uri" value="/counterparty1"/>
+		<property name="kind" value="DIMENSION"/>
+		<property name="semantic.tree.uri" value="/counterparty1"/>
+		<property name="semantic.tree.sort.order" value="1"/>
+		<property name="aggregateType" value="java.lang.Long"/>
+		<property name="previous.display" value="counterparty1"/>
+		<property name="adhoc.display" value="counterparty1"/>
+		<property name="adhoc.tree.uri" value="/counterparty1"/>
+		<property name="semantic.item.label" value="counterparty1"/>
+		<property name="defaultAgg" value="CountAll"/>
+		<property name="aggregateExpression" value="CountAll(counterparty1)"/>
+	</field>
+	<field name="custodian" class="java.lang.String">
+		<property name="resourceId" value="fact_trades.custodian"/>
+		<property name="adhoc.chosen.tree.uri" value="/custodian"/>
+		<property name="kind" value="DIMENSION"/>
+		<property name="semantic.tree.uri" value="/custodian"/>
+		<property name="semantic.tree.sort.order" value="2"/>
+		<property name="aggregateType" value="java.lang.Long"/>
+		<property name="previous.display" value="custodian"/>
+		<property name="adhoc.display" value="custodian"/>
+		<property name="adhoc.tree.uri" value="/custodian"/>
+		<property name="semantic.item.label" value="custodian"/>
+		<property name="defaultAgg" value="CountAll"/>
+		<property name="aggregateExpression" value="CountAll(custodian)"/>
+	</field>
+	<field name="Month" class="java.sql.Timestamp">
+		<property name="resourceId" value="fact_trades.Month"/>
+		<property name="adhoc.chosen.tree.uri" value="/Month"/>
+		<property name="kind" value="DIMENSION"/>
+		<property name="defaultMaskId" value="ADH_100_MASK_timestamp_0"/>
+		<property name="semantic.tree.uri" value="/Month"/>
+		<property name="semantic.tree.sort.order" value="3"/>
+		<property name="aggregateType" value="java.lang.Long"/>
+		<property name="previous.display" value="Month"/>
+		<property name="adhoc.display" value="Month"/>
+		<property name="adhoc.tree.uri" value="/Month"/>
+		<property name="semantic.item.label" value="Month"/>
+		<property name="defaultAgg" value="CountAll"/>
+		<property name="aggregateExpression" value="CountAll(Month)"/>
+		<property name="defaultMask" value="medium,hide"/>
+	</field>
+	<field name="platform" class="java.lang.String">
+		<property name="resourceId" value="fact_trades.platform"/>
+		<property name="adhoc.chosen.tree.uri" value="/platform"/>
+		<property name="kind" value="DIMENSION"/>
+		<property name="semantic.tree.uri" value="/platform"/>
+		<property name="semantic.tree.sort.order" value="4"/>
+		<property name="aggregateType" value="java.lang.Long"/>
+		<property name="previous.display" value="platform"/>
+		<property name="adhoc.display" value="platform"/>
+		<property name="adhoc.tree.uri" value="/platform"/>
+		<property name="semantic.item.label" value="platform"/>
+		<property name="defaultAgg" value="CountAll"/>
+		<property name="aggregateExpression" value="CountAll(platform)"/>
+	</field>
+	<field name="Q" class="java.lang.Long">
+		<property name="adhoc.display" value="Q"/>
+		<property name="kind" value="MEASURE"/>
+		<property name="aggregate" value="true"/>
+		<property name="defaultAgg" value="AggregateFormula"/>
+		<property name="adhoc.expression" value="CountAll(Month)"/>
+		<property name="aggregateExpression" value="CountAll(Month)"/>
+		<property name="aggregateType" value="java.lang.Long"/>
+		<property name="defaultMask" value="#,##0"/>
+		<property name="defaultMaskId" value="ADH_100_MASK_int_0"/>
+	</field>
+</jasperReport>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jdbcDataSource exportedWithPermissions="false">
+    <folder>/public/Bosonic/Datasource</folder>
+    <name>Warehouse</name>
+    <version>9</version>
+    <label>Warehouse</label>
+    <creationDate>2022-07-15T15:43:06.136-03:00</creationDate>
+    <updateDate>2022-07-08T15:23:30.041-03:00</updateDate>
+    <driver>org.postgresql.Driver</driver>
+    <connectionUrl>jdbc:postgresql://{attribute('warehouse_host','server')}:{attribute('warehouse_port','server')}/{attribute('warehouse_database','server')}</connectionUrl>
+    <connectionUser>{attribute('warehouse_username','server')}</connectionUser>
+    <connectionPassword>ENC&lt;4A52534956000000102F268B0CD06B9C4C6A17F8069BB3C58425F47E2F74A2B4D0BFAC48D5D2B26B63EA90C3B2AF340C63CEC08BF3519E6CB9477394E1469053A0B6D847B4D68E0551&gt;</connectionPassword>
+    <timezone></timezone>
+</jdbcDataSource>

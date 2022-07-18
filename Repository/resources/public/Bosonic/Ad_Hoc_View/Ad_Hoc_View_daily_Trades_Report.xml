@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reportUnit exportedWithPermissions="false">
+    <folder>/public/Bosonic/Ad_Hoc_View</folder>
+    <name>Ad_Hoc_View_daily_Trades_Report</name>
+    <version>8</version>
+    <label>Ad Hoc View_daily Trades Report</label>
+    <description></description>
+    <creationDate>2022-07-15T15:43:11.528-03:00</creationDate>
+    <updateDate>2022-07-12T10:11:03.713-03:00</updateDate>
+    <mainReport>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false"
+            dataFile="mainReportJrxml.data" xsi:type="fileResource">
+            <folder>/public/Bosonic/Ad_Hoc_View/Ad_Hoc_View_daily_Trades_Report_files</folder>
+            <name>mainReportJrxml</name>
+            <version>1</version>
+            <label>mainReportJrxml</label>
+            <creationDate>2022-07-15T15:43:11.528-03:00</creationDate>
+            <updateDate>2022-07-12T10:11:03.713-03:00</updateDate>
+            <fileType>jrxml</fileType>
+        </localResource>
+    </mainReport>
+    <dataSource>
+        <uri>/public/Bosonic/Ad_Hoc_View/Ad_Hoc_View_daily_Trades</uri>
+    </dataSource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="stateXML.data" xsi:type="fileResource">
+            <folder>/public/Bosonic/Ad_Hoc_View/Ad_Hoc_View_daily_Trades_Report_files</folder>
+            <name>stateXML</name>
+            <version>1</version>
+            <label>stateXML</label>
+            <creationDate>2022-07-15T15:43:11.528-03:00</creationDate>
+            <updateDate>2022-07-12T10:11:03.713-03:00</updateDate>
+            <fileType>xml</fileType>
+        </localResource>
+    </resource>
+    <alwaysPromptControls>false</alwaysPromptControls>
+    <controlsLayout>1</controlsLayout>
+</reportUnit>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.jaspersoft.com/2007/SL/XMLSchema" version="1.3">
+  <dataIslands>
+    <itemGroup id="fact_payments" label="fact_payments" resourceId="fact_payments" />
+    <itemGroup id="fact_payments_minutes" label="fact_payments_minutes" resourceId="fact_payments_minutes" />
+  </dataIslands>
+  <dataSources>
+    <jdbcDataSource id="Warehouse">
+      <schemaMap>
+        <entry key="public">
+          <string>public</string>
+        </entry>
+        <entry key="defaultSchema">
+          <string></string>
+        </entry>
+      </schemaMap>
+    </jdbcDataSource>
+  </dataSources>
+  <items>
+    <item id="actionby" label="actionby" resourceId="fact_payments.actionby" />
+    <item id="actiontimestamp" label="actiontimestamp" resourceId="fact_payments.actiontimestamp" />
+    <item id="amount" label="amount" resourceId="fact_payments.amount" />
+    <item id="asset" label="asset" resourceId="fact_payments.asset" />
+    <item id="chainid" label="chainid" resourceId="fact_payments.chainid" />
+    <item id="custodian" label="custodian" resourceId="fact_payments.custodian" />
+    <item id="date" label="date" resourceId="fact_payments.date" />
+    <item id="datetime" label="datetime" resourceId="fact_payments.datetime" />
+    <item id="destinationentityid" label="destinationentityid" resourceId="fact_payments.destinationentityid" />
+    <item id="destinationmemberid" label="destinationmemberid" resourceId="fact_payments.destinationmemberid" />
+    <item id="entityid" label="entityid" resourceId="fact_payments.entityid" />
+    <item id="status" label="status" resourceId="fact_payments.status" />
+    <item id="actiontimestamp_1" label="actiontimestamp" resourceId="fact_payments_minutes.actiontimestamp" />
+    <item id="asset_1" label="asset" resourceId="fact_payments_minutes.asset" />
+    <item id="custodian_1" label="custodian" resourceId="fact_payments_minutes.custodian" />
+    <item id="date_1" label="date" resourceId="fact_payments_minutes.date" />
+    <item defaultAgg="CountAll" dimensionOrMeasure="Dimension" id="hour" label="hour" resourceId="fact_payments_minutes.hour" />
+    <item defaultAgg="CountAll" dimensionOrMeasure="Dimension" id="minute" label="minute" resourceId="fact_payments_minutes.minute" />
+    <item id="quantity" label="quantity" resourceId="fact_payments_minutes.quantity" />
+  </items>
+  <resources>
+    <jdbcTable id="fact_payments_minutes" datasourceId="Warehouse" datasourceTableName="fact_payments_minutes" schemaAlias="public">
+      <fieldList>
+        <field id="actiontimestamp" type="java.lang.String" />
+        <field id="date" type="java.sql.Timestamp" />
+        <field id="hour" type="java.math.BigDecimal" />
+        <field id="minute" type="java.math.BigDecimal" />
+        <field id="custodian" type="java.lang.String" />
+        <field id="asset" type="java.lang.String" />
+        <field id="quantity" type="java.math.BigDecimal" />
+      </fieldList>
+    </jdbcTable>
+    <jdbcTable id="fact_payments" datasourceId="Warehouse" datasourceTableName="fact_payments" schemaAlias="public">
+      <fieldList>
+        <field id="actiontimestamp" type="java.lang.String" />
+        <field id="datetime" type="java.sql.Timestamp" />
+        <field id="date" type="java.sql.Timestamp" />
+        <field id="actionby" type="java.lang.String" />
+        <field id="destinationmemberid" type="java.lang.String" />
+        <field id="destinationentityid" type="java.lang.String" />
+        <field id="status" type="java.lang.String" />
+        <field id="custodian" type="java.lang.String" />
+        <field id="asset" type="java.lang.String" />
+        <field id="chainid" type="java.lang.String" />
+        <field id="entityid" type="java.lang.String" />
+        <field id="amount" type="java.math.BigDecimal" />
+      </fieldList>
+    </jdbcTable>
+  </resources>
+</schema>
+

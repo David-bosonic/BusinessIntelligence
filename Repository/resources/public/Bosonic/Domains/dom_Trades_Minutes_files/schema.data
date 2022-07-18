@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.jaspersoft.com/2007/SL/XMLSchema" version="1.3">
+  <dataIslands>
+    <itemGroup id="fact_trades_minutes" label="fact_trades_minutes" resourceId="fact_trades_minutes" />
+  </dataIslands>
+  <dataSources>
+    <jdbcDataSource id="Warehouse">
+      <schemaMap>
+        <entry key="public">
+          <string>public</string>
+        </entry>
+        <entry key="defaultSchema">
+          <string></string>
+        </entry>
+      </schemaMap>
+    </jdbcDataSource>
+  </dataSources>
+  <items>
+    <item id="assetpair" label="assetpair" resourceId="fact_trades_minutes.assetpair" />
+    <item id="date" label="date" resourceId="fact_trades_minutes.date" />
+    <item defaultAgg="CountAll" dimensionOrMeasure="Dimension" id="hour" label="hour" resourceId="fact_trades_minutes.hour" />
+    <item defaultAgg="CountAll" dimensionOrMeasure="Dimension" id="minute" label="minute" resourceId="fact_trades_minutes.minute" />
+    <item id="Month" label="Month" resourceId="fact_trades_minutes.Month" />
+    <item id="platform" label="platform" resourceId="fact_trades_minutes.platform" />
+    <item id="quantity" label="quantity" resourceId="fact_trades_minutes.quantity" />
+  </items>
+  <resources>
+    <jdbcTable id="fact_trades_minutes" datasourceId="Warehouse" datasourceTableName="fact_trades_minutes" schemaAlias="public">
+      <fieldList>
+        <field id="platform" type="java.lang.String" />
+        <field id="date" type="java.sql.Timestamp" />
+        <field id="hour" type="java.math.BigDecimal" />
+        <field id="minute" type="java.math.BigDecimal" />
+        <field id="assetpair" type="java.lang.String" />
+        <field id="quantity" type="java.math.BigDecimal" />
+        <field id="Month" type="java.sql.Timestamp" />
+      </fieldList>
+    </jdbcTable>
+  </resources>
+</schema>
+

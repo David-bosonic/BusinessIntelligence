@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<folder exportedWithPermissions="false">
+    <parent>/public/Bosonic</parent>
+    <name>Reports</name>
+    <label>Reports</label>
+    <description></description>
+    <creationDate>2022-07-11T18:04:27.578-03:00</creationDate>
+    <updateDate>2022-07-08T15:04:28.471-03:00</updateDate>
+    <resource>candle</resource>
+    <resource>testjson</resource>
+    <resource>top_10_traders</resource>
+    <resource>Trader_Detail_3_Months</resource>
+</folder>

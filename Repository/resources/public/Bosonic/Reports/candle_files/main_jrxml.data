@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 8.0.0.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="candle" pageWidth="595" pageHeight="475" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="0af0fc7c-5404-45a5-9dd4-b1707478b043">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="repo1"/>
+	<property name="ireport.jasperserver.url" value="http://localhost:8080/jasperserver-pro/"/>
+	<property name="ireport.jasperserver.user" value="jasperadmin"/>
+	<property name="ireport.jasperserver.report.resource" value="/public/Bosonic/candle_files/main_jrxml"/>
+	<property name="ireport.jasperserver.reportUnit" value="/public/Bosonic/candle"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString language="SQL">
+		<![CDATA[select * from fact_prices_minutes
+Where Date > '03/07/2022 23:30'
+order by date asc]]>
+	</queryString>
+	<field name="date" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="date"/>
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fact_prices_minutes"/>
+	</field>
+	<field name="symbol" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="symbol"/>
+		<property name="com.jaspersoft.studio.field.label" value="symbol"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fact_prices_minutes"/>
+	</field>
+	<field name="hour" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="hour"/>
+		<property name="com.jaspersoft.studio.field.label" value="hour"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fact_prices_minutes"/>
+	</field>
+	<field name="minute" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="minute"/>
+		<property name="com.jaspersoft.studio.field.label" value="minute"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fact_prices_minutes"/>
+	</field>
+	<field name="o" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="o"/>
+		<property name="com.jaspersoft.studio.field.label" value="o"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fact_prices_minutes"/>
+	</field>
+	<field name="c" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="c"/>
+		<property name="com.jaspersoft.studio.field.label" value="c"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fact_prices_minutes"/>
+	</field>
+	<field name="h" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="h"/>
+		<property name="com.jaspersoft.studio.field.label" value="h"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fact_prices_minutes"/>
+	</field>
+	<field name="l" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="l"/>
+		<property name="com.jaspersoft.studio.field.label" value="l"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="fact_prices_minutes"/>
+	</field>
+	<group name="symbol">
+		<groupExpression><![CDATA[$F{symbol}]]></groupExpression>
+	</group>
+	<group name="hour">
+		<groupExpression><![CDATA[$F{hour}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="440">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<candlestickChart>
+				<chart isShowLegend="false">
+					<reportElement isPrintRepeatedValues="false" x="0" y="0" width="595" height="440" isRemoveLineWhenBlank="true" printWhenGroupChanges="hour" uuid="4f86c113-6f23-4796-81df-2a4970fc766d">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<chartTitle>
+						<titleExpression><![CDATA[$F{symbol}]]></titleExpression>
+					</chartTitle>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<highLowDataset>
+					<dataset resetType="Report"/>
+					<seriesExpression><![CDATA[$F{symbol}]]></seriesExpression>
+					<dateExpression><![CDATA[$F{date}]]></dateExpression>
+					<highExpression><![CDATA[$F{h}]]></highExpression>
+					<lowExpression><![CDATA[$F{l}]]></lowExpression>
+					<openExpression><![CDATA[$F{o}]]></openExpression>
+					<closeExpression><![CDATA[$F{c}]]></closeExpression>
+					<volumeExpression><![CDATA[0]]></volumeExpression>
+				</highLowDataset>
+				<candlestickPlot>
+					<plot/>
+					<timeAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</timeAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+					<rangeAxisMinValueExpression><![CDATA[SUM(MIN($F{o},$F{c},$F{h},$F{l}),-500)]]></rangeAxisMinValueExpression>
+					<rangeAxisMaxValueExpression><![CDATA[SUM(MAX($F{o},$F{c},$F{h},$F{l}),500)]]></rangeAxisMaxValueExpression>
+				</candlestickPlot>
+			</candlestickChart>
+		</band>
+	</summary>
+</jasperReport>

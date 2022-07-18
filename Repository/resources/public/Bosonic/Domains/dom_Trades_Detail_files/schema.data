@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.jaspersoft.com/2007/SL/XMLSchema" version="1.3">
+  <dataIslands>
+    <itemGroup id="fact_trades" label="fact_trades" resourceId="fact_trades" />
+  </dataIslands>
+  <dataSources>
+    <jdbcDataSource id="Warehouse">
+      <schemaMap>
+        <entry key="public">
+          <string>public</string>
+        </entry>
+        <entry key="defaultSchema">
+          <string></string>
+        </entry>
+      </schemaMap>
+    </jdbcDataSource>
+  </dataSources>
+  <items>
+    <item id="asset1" label="asset1" resourceId="fact_trades.asset1" />
+    <item id="asset2" label="asset2" resourceId="fact_trades.asset2" />
+    <item id="assetpair" label="assetpair" resourceId="fact_trades.assetpair" />
+    <item id="counterparty1" label="counterparty1" resourceId="fact_trades.counterparty1" />
+    <item id="custodian" label="custodian" resourceId="fact_trades.custodian" />
+    <item id="datetime" label="datetime" resourceId="fact_trades.datetime" />
+    <item id="filled" label="filled" resourceId="fact_trades.filled" />
+    <item id="Month" label="Month" resourceId="fact_trades.Month" />
+    <item id="orderid" label="orderid" resourceId="fact_trades.orderid" />
+    <item id="ordstatus" label="ordstatus" resourceId="fact_trades.ordstatus" />
+    <item id="platform" label="platform" resourceId="fact_trades.platform" />
+    <item id="qty1" label="qty1" resourceId="fact_trades.qty1" />
+    <item id="qty2" label="qty2" resourceId="fact_trades.qty2" />
+    <item id="rate" label="rate" resourceId="fact_trades.rate" />
+    <item id="rref" label="rref" resourceId="fact_trades.rref" />
+    <item id="side" label="side" resourceId="fact_trades.side" />
+    <item id="tif" label="tif" resourceId="fact_trades.tif" />
+    <item id="timestamp" label="timestamp" resourceId="fact_trades.timestamp" />
+  </items>
+  <resources>
+    <jdbcTable id="fact_trades" datasourceId="Warehouse" datasourceTableName="fact_trades" schemaAlias="public">
+      <fieldList>
+        <field id="platform" type="java.lang.String" />
+        <field id="datetime" type="java.sql.Timestamp" />
+        <field id="timestamp" type="java.lang.String" />
+        <field id="ordstatus" type="java.lang.String" />
+        <field id="assetpair" type="java.lang.String" />
+        <field id="side" type="java.lang.String" />
+        <field id="asset1" type="java.lang.String" />
+        <field id="filled" type="java.math.BigDecimal" />
+        <field id="rate" type="java.math.BigDecimal" />
+        <field id="qty1" type="java.math.BigDecimal" />
+        <field id="asset2" type="java.lang.String" />
+        <field id="qty2" type="java.math.BigDecimal" />
+        <field id="counterparty1" type="java.lang.String" />
+        <field id="tif" type="java.lang.String" />
+        <field id="orderid" type="java.lang.String" />
+        <field id="rref" type="java.lang.String" />
+        <field id="custodian" type="java.lang.String" />
+        <field id="Month" type="java.sql.Timestamp" />
+      </fieldList>
+    </jdbcTable>
+  </resources>
+</schema>
+

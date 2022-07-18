@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<folder exportedWithPermissions="false">
+    <parent>/public/Bosonic</parent>
+    <name>Ad_Hoc_View</name>
+    <label>Ad Hoc View</label>
+    <description></description>
+    <creationDate>2022-07-12T10:11:24.913-03:00</creationDate>
+    <updateDate>2022-07-12T10:11:24.913-03:00</updateDate>
+    <resource>Ad_Hoc_View_daily_Trades</resource>
+    <resource>Ad_Hoc_View_daily_Trades_Report</resource>
+</folder>

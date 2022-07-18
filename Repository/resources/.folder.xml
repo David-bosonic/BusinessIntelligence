@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<folder exportedWithPermissions="false">
+    <name>/</name>
+    <label>root</label>
+    <description>Root of the folder hierarchy</description>
+    <creationDate>2022-06-29T17:02:48.228-03:00</creationDate>
+    <updateDate>2021-11-12T01:38:42.760-03:00</updateDate>
+    <folder>public</folder>
+</folder>

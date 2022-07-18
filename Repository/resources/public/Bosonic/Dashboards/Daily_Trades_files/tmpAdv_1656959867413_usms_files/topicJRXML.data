@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="adhocReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="30" uuid="2404def2-0ba5-42ae-9ca3-f394ca68717d">
+	<property name="adhoc.topic.escape.variable.chars"/>
+	<property name="adhoc.metadata.version" value="56"/>
+	<property name="has.modified.presentation" value="false"/>
+	<property name="base.datasource.version" value="2"/>
+	<property name="use.datasource.presentation" value="true"/>
+	<property name="com.jaspersoft.jasperserver.api.metadata.jasperreports.domain.TopicReportUnit" value="/temp/sl_topic_e9136166-b943-4c59-b4a6-ea232143631c"/>
+	<parameter name="sDate_1" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[new java.lang.Integer("7")]]></defaultValueExpression>
+	</parameter>
+	<queryString language="domain">
+		<![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<query xmlns="http://www.jaspersoft.com/2007/SL/XMLSchema">
+  <queryFields>
+    <queryField id="assetpair" />
+    <queryField id="date" />
+    <queryField id="quantity" />
+  </queryFields>
+</query>]]>
+	</queryString>
+	<field name="assetpair" class="java.lang.String">
+		<property name="adhoc.chosen.tree.order">
+			<![CDATA[{"date":2,"quantity":3,"assetpair":1}]]>
+		</property>
+		<property name="resourceId" value="fact_trades_minutes.assetpair"/>
+		<property name="adhoc.chosen.tree.uri" value="/assetpair"/>
+		<property name="kind" value="DIMENSION"/>
+		<property name="adhoc.chosen.tree.labels" value="[]"/>
+		<property name="adhoc.tree.labels" value="[]"/>
+		<property name="semantic.tree.uri" value="/assetpair"/>
+		<property name="semantic.tree.sort.order">
+			<![CDATA[{"assetpair":1,"date":2,"hour":3,"minute":4,"platform":5,"quantity":6}]]>
+		</property>
+		<property name="slIsTableAsList" value="false"/>
+		<property name="aggregateType" value="java.lang.Long"/>
+		<property name="previous.display" value="assetpair"/>
+		<property name="adhoc.display" value="assetpair"/>
+		<property name="adhoc.chosen.tree.is.flattened" value="false"/>
+		<property name="adhoc.tree.uri" value="/assetpair"/>
+		<property name="semantic.item.label" value="assetpair"/>
+		<property name="defaultAgg" value="CountAll"/>
+		<property name="aggregateExpression" value="CountAll(assetpair)"/>
+	</field>
+	<field name="date" class="java.sql.Timestamp">
+		<property name="resourceId" value="fact_trades_minutes.date"/>
+		<property name="adhoc.chosen.tree.uri" value="/date"/>
+		<property name="kind" value="DIMENSION"/>
+		<property name="defaultMaskId" value="ADH_100_MASK_timestamp_0"/>
+		<property name="semantic.tree.uri" value="/date"/>
+		<property name="semantic.tree.sort.order" value="1"/>
+		<property name="aggregateType" value="java.lang.Long"/>
+		<property name="previous.display" value="date"/>
+		<property name="adhoc.display" value="date"/>
+		<property name="adhoc.tree.uri" value="/date"/>
+		<property name="semantic.item.label" value="date"/>
+		<property name="defaultAgg" value="CountAll"/>
+		<property name="aggregateExpression" value="CountAll(date)"/>
+		<property name="defaultMask" value="medium,hide"/>
+	</field>
+	<field name="quantity" class="java.math.BigDecimal">
+		<property name="resourceId" value="fact_trades_minutes.quantity"/>
+		<property name="adhoc.chosen.tree.uri" value="/quantity"/>
+		<property name="kind" value="MEASURE"/>
+		<property name="defaultMaskId" value="ADH_100_MASK_dec_0"/>
+		<property name="semantic.tree.uri" value="/quantity"/>
+		<property name="semantic.tree.sort.order" value="2"/>
+		<property name="aggregateType" value="java.math.BigDecimal"/>
+		<property name="previous.display" value="quantity"/>
+		<property name="adhoc.display" value="quantity"/>
+		<property name="adhoc.tree.uri" value="/quantity"/>
+		<property name="semantic.item.label" value="quantity"/>
+		<property name="defaultAgg" value="Sum"/>
+		<property name="aggregateExpression" value="Sum(quantity)"/>
+		<property name="defaultMask" value="#,##0.00"/>
+	</field>
+	<field name="sDate" class="java.lang.Integer">
+		<property name="adhoc.display" value="sDate"/>
+		<property name="kind" value="DIMENSION"/>
+		<property name="aggregate" value="false"/>
+		<property name="defaultAgg" value="Sum"/>
+		<property name="adhoc.expression" value="DayNumber(date)"/>
+		<property name="aggregateExpression" value="Sum(DayNumber(date))"/>
+		<property name="aggregateType" value="java.lang.Long"/>
+		<property name="defaultMask" value="#,##0"/>
+		<property name="defaultMaskId" value="ADH_100_MASK_int_0"/>
+	</field>
+</jasperReport>

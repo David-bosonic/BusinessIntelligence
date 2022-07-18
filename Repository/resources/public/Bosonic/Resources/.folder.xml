@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<folder exportedWithPermissions="false">
+    <parent>/public/Bosonic</parent>
+    <name>Resources</name>
+    <label>Resources</label>
+    <description></description>
+    <creationDate>2022-07-14T10:15:45.950-03:00</creationDate>
+    <updateDate>2022-07-14T10:15:45.950-03:00</updateDate>
+    <resource>logo_small.png</resource>
+</folder>

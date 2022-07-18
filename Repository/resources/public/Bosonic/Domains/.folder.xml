@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<folder exportedWithPermissions="false">
+    <parent>/public/Bosonic</parent>
+    <name>Domains</name>
+    <label>Domains</label>
+    <description></description>
+    <creationDate>2022-07-11T18:04:27.550-03:00</creationDate>
+    <updateDate>2022-07-08T15:04:07.625-03:00</updateDate>
+    <resource>dom_Payments_Minutes</resource>
+    <resource>dom_Trades_Detail</resource>
+    <resource>dom_Trades_Minutes</resource>
+</folder>

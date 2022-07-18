@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<adhocDataView exportedWithPermissions="false">
+    <folder>/public/Bosonic/Ad_Hoc_View</folder>
+    <name>Ad_Hoc_View_daily_Trades</name>
+    <version>10</version>
+    <label>Ad Hoc View_daily Trades</label>
+    <description></description>
+    <creationDate>2022-07-15T15:43:11.396-03:00</creationDate>
+    <updateDate>2022-07-12T10:11:03.259-03:00</updateDate>
+    <dataSource>
+        <uri>/public/Bosonic/Domains/dom_Trades_Minutes</uri>
+    </dataSource>
+    <inputControl>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" xsi:type="inputControl">
+            <folder>/public/Bosonic/Ad_Hoc_View/Ad_Hoc_View_daily_Trades_files</folder>
+            <name>platform_1</name>
+            <version>1</version>
+            <label>platform</label>
+            <creationDate>2022-07-15T15:43:11.396-03:00</creationDate>
+            <updateDate>2022-07-12T10:11:03.259-03:00</updateDate>
+            <type>4</type>
+            <mandatory>false</mandatory>
+            <readOnly>false</readOnly>
+            <visible>true</visible>
+            <query>
+                <localResource exportedWithPermissions="false" xsi:type="query">
+                    <folder>/public/Bosonic/Ad_Hoc_View/Ad_Hoc_View_daily_Trades_files/platform_1_files</folder>
+                    <name>platform_1</name>
+                    <version>0</version>
+                    <label>platform</label>
+                    <creationDate>2022-07-15T15:43:11.396-03:00</creationDate>
+                    <updateDate>2022-07-12T10:11:03.259-03:00</updateDate>
+                    <language>domain</language>
+                    <queryString>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;query xmlns="http://www.jaspersoft.com/2007/SL/XMLSchema"&gt;
+  &lt;groupList&gt;
+    &lt;group columnName="platform" id="platform" /&gt;
+  &lt;/groupList&gt;
+  &lt;queryFields&gt;
+    &lt;queryField id="platform" /&gt;
+  &lt;/queryFields&gt;
+  &lt;sortList&gt;
+    &lt;sortColumn columnName="platform" /&gt;
+  &lt;/sortList&gt;
+&lt;/query&gt;
+
+</queryString>
+                    <dataSource>
+                        <uri>/public/Bosonic/Domains/dom_Trades_Minutes</uri>
+                    </dataSource>
+                </localResource>
+            </query>
+            <queryVisibleColumn>platform</queryVisibleColumn>
+            <queryValueColumn>platform</queryValueColumn>
+        </localResource>
+    </inputControl>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="topicJRXML.data" xsi:type="fileResource">
+            <folder>/public/Bosonic/Ad_Hoc_View/Ad_Hoc_View_daily_Trades_files</folder>
+            <name>topicJRXML</name>
+            <version>1</version>
+            <label>topicJRXML</label>
+            <creationDate>2022-07-15T15:43:11.396-03:00</creationDate>
+            <updateDate>2022-07-12T10:07:36.547-03:00</updateDate>
+            <fileType>jrxml</fileType>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="stateXML.data" xsi:type="fileResource">
+            <folder>/public/Bosonic/Ad_Hoc_View/Ad_Hoc_View_daily_Trades_files</folder>
+            <name>stateXML</name>
+            <version>1</version>
+            <label>stateXML</label>
+            <creationDate>2022-07-15T15:43:11.396-03:00</creationDate>
+            <updateDate>2022-07-12T10:07:36.547-03:00</updateDate>
+            <fileType>xml</fileType>
+        </localResource>
+    </resource>
+    <alwaysPromptControls>false</alwaysPromptControls>
+    <controlsLayout>1</controlsLayout>
+</adhocDataView>

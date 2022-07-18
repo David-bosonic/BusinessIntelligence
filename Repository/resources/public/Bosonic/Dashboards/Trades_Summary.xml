@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dashboardModelResource exportedWithPermissions="false">
+    <folder>/public/Bosonic/Dashboards</folder>
+    <name>Trades_Summary</name>
+    <version>52</version>
+    <label>Trades Summary</label>
+    <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+    <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+    <defaultFoundation>default</defaultFoundation>
+    <foundation>
+        <id>default</id>
+        <layout>layout</layout>
+        <wiring>wiring</wiring>
+        <components>components</components>
+    </foundation>
+    <resourceDescriptor>
+        <type>wiring</type>
+        <id>wiring</id>
+    </resourceDescriptor>
+    <resourceDescriptor>
+        <type>layout</type>
+        <id>layout</id>
+    </resourceDescriptor>
+    <resourceDescriptor>
+        <type>components</type>
+        <id>components</id>
+    </resourceDescriptor>
+    <resourceDescriptor>
+        <type>adhocDataView</type>
+        <id>/temp/tmpAdv_1657719630417_tkar</id>
+    </resourceDescriptor>
+    <resourceDescriptor>
+        <type>adhocDataView</type>
+        <id>/temp/tmpAdv_1657732484756_qqph</id>
+    </resourceDescriptor>
+    <resourceDescriptor>
+        <type>reportUnit</type>
+        <id>/public/Bosonic/Reports/top_10_traders</id>
+    </resourceDescriptor>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="wiring.data" xsi:type="fileResource">
+            <folder>/public/Bosonic/Dashboards/Trades_Summary_files</folder>
+            <name>wiring</name>
+            <version>1</version>
+            <label>wiring</label>
+            <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+            <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+            <fileType>json</fileType>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="layout" xsi:type="contentResource">
+            <folder>/public/Bosonic/Dashboards/Trades_Summary_files</folder>
+            <name>layout</name>
+            <version>1</version>
+            <label>layout</label>
+            <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+            <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+            <fileType>html</fileType>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="components.data" xsi:type="fileResource">
+            <folder>/public/Bosonic/Dashboards/Trades_Summary_files</folder>
+            <name>components</name>
+            <version>1</version>
+            <label>components</label>
+            <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+            <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+            <fileType>dashboardComponent</fileType>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" xsi:type="adhocDataView">
+            <folder>/public/Bosonic/Dashboards/Trades_Summary_files</folder>
+            <name>tmpAdv_1657719630417_tkar</name>
+            <version>1</version>
+            <label>tmpAdv_1657719630417_tkar</label>
+            <description>Dashboard visualization.</description>
+            <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+            <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+            <dataSource>
+                <uri>/public/Bosonic/Domains/dom_Trades_Detail</uri>
+            </dataSource>
+            <inputControl>
+                <localResource exportedWithPermissions="false" xsi:type="inputControl">
+                    <folder>/public/Bosonic/Dashboards/Trades_Summary_files/tmpAdv_1657719630417_tkar_files</folder>
+                    <name>Month_1</name>
+                    <version>0</version>
+                    <label>Month equals</label>
+                    <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+                    <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+                    <type>2</type>
+                    <mandatory>false</mandatory>
+                    <readOnly>false</readOnly>
+                    <visible>true</visible>
+                    <dataType>
+                        <localResource exportedWithPermissions="false" xsi:type="dataType">
+                            <folder>/public/Bosonic/Dashboards/Trades_Summary_files/tmpAdv_1657719630417_tkar_files/Month_1_files</folder>
+                            <name>timestamp</name>
+                            <version>0</version>
+                            <label>Timestamp</label>
+                            <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+                            <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+                            <type>4</type>
+                            <strictMin>false</strictMin>
+                            <strictMax>false</strictMax>
+                        </localResource>
+                    </dataType>
+                </localResource>
+            </inputControl>
+            <resource>
+                <localResource exportedWithPermissions="false"
+                    dataFile="topicJRXML.data" xsi:type="fileResource">
+                    <folder>/public/Bosonic/Dashboards/Trades_Summary_files/tmpAdv_1657719630417_tkar_files</folder>
+                    <name>topicJRXML</name>
+                    <version>0</version>
+                    <label>topicJRXML</label>
+                    <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+                    <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+                    <fileType>jrxml</fileType>
+                </localResource>
+            </resource>
+            <resource>
+                <localResource exportedWithPermissions="false"
+                    dataFile="stateXML.data" xsi:type="fileResource">
+                    <folder>/public/Bosonic/Dashboards/Trades_Summary_files/tmpAdv_1657719630417_tkar_files</folder>
+                    <name>stateXML</name>
+                    <version>0</version>
+                    <label>stateXML</label>
+                    <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+                    <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+                    <fileType>xml</fileType>
+                </localResource>
+            </resource>
+            <reports>
+                <localResource exportedWithPermissions="false" xsi:type="reportUnit">
+                    <folder>/public/Bosonic/Dashboards/Trades_Summary_files/tmpAdv_1657719630417_tkar_files</folder>
+                    <name>dashboardReport</name>
+                    <version>1</version>
+                    <label>dashboardReport</label>
+                    <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+                    <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+                    <mainReport>
+                        <localResource exportedWithPermissions="false"
+                            dataFile="mainReportJrxml.data" xsi:type="fileResource">
+                            <folder>/public/Bosonic/Dashboards/Trades_Summary_files/tmpAdv_1657719630417_tkar_files/dashboardReport_files</folder>
+                            <name>mainReportJrxml</name>
+                            <version>0</version>
+                            <label>mainReportJrxml</label>
+                            <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+                            <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+                            <fileType>jrxml</fileType>
+                        </localResource>
+                    </mainReport>
+                    <resource>
+                        <localResource exportedWithPermissions="false"
+                            dataFile="stateXML.data" xsi:type="fileResource">
+                            <folder>/public/Bosonic/Dashboards/Trades_Summary_files/tmpAdv_1657719630417_tkar_files/dashboardReport_files</folder>
+                            <name>stateXML</name>
+                            <version>0</version>
+                            <label>stateXML</label>
+                            <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+                            <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+                            <fileType>xml</fileType>
+                        </localResource>
+                    </resource>
+                    <alwaysPromptControls>false</alwaysPromptControls>
+                    <controlsLayout>1</controlsLayout>
+                </localResource>
+            </reports>
+            <alwaysPromptControls>false</alwaysPromptControls>
+            <controlsLayout>1</controlsLayout>
+        </localResource>
+    </resource>
+    <resource>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" xsi:type="adhocDataView">
+            <folder>/public/Bosonic/Dashboards/Trades_Summary_files</folder>
+            <name>tmpAdv_1657732484756_qqph</name>
+            <version>1</version>
+            <label>tmpAdv_1657732484756_qqph</label>
+            <description>Dashboard visualization.</description>
+            <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+            <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+            <dataSource>
+                <uri>/public/Bosonic/Domains/dom_Trades_Minutes</uri>
+            </dataSource>
+            <resource>
+                <localResource exportedWithPermissions="false"
+                    dataFile="topicJRXML.data" xsi:type="fileResource">
+                    <folder>/public/Bosonic/Dashboards/Trades_Summary_files/tmpAdv_1657732484756_qqph_files</folder>
+                    <name>topicJRXML</name>
+                    <version>0</version>
+                    <label>topicJRXML</label>
+                    <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+                    <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+                    <fileType>jrxml</fileType>
+                </localResource>
+            </resource>
+            <resource>
+                <localResource exportedWithPermissions="false"
+                    dataFile="stateXML.data" xsi:type="fileResource">
+                    <folder>/public/Bosonic/Dashboards/Trades_Summary_files/tmpAdv_1657732484756_qqph_files</folder>
+                    <name>stateXML</name>
+                    <version>0</version>
+                    <label>stateXML</label>
+                    <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+                    <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+                    <fileType>xml</fileType>
+                </localResource>
+            </resource>
+            <reports>
+                <localResource exportedWithPermissions="false" xsi:type="reportUnit">
+                    <folder>/public/Bosonic/Dashboards/Trades_Summary_files/tmpAdv_1657732484756_qqph_files</folder>
+                    <name>dashboardReport</name>
+                    <version>1</version>
+                    <label>dashboardReport</label>
+                    <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+                    <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+                    <mainReport>
+                        <localResource exportedWithPermissions="false"
+                            dataFile="mainReportJrxml.data" xsi:type="fileResource">
+                            <folder>/public/Bosonic/Dashboards/Trades_Summary_files/tmpAdv_1657732484756_qqph_files/dashboardReport_files</folder>
+                            <name>mainReportJrxml</name>
+                            <version>0</version>
+                            <label>mainReportJrxml</label>
+                            <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+                            <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+                            <fileType>jrxml</fileType>
+                        </localResource>
+                    </mainReport>
+                    <resource>
+                        <localResource exportedWithPermissions="false"
+                            dataFile="stateXML.data" xsi:type="fileResource">
+                            <folder>/public/Bosonic/Dashboards/Trades_Summary_files/tmpAdv_1657732484756_qqph_files/dashboardReport_files</folder>
+                            <name>stateXML</name>
+                            <version>0</version>
+                            <label>stateXML</label>
+                            <creationDate>2022-07-15T15:43:13.159-03:00</creationDate>
+                            <updateDate>2022-07-15T10:28:43.863-03:00</updateDate>
+                            <fileType>xml</fileType>
+                        </localResource>
+                    </resource>
+                    <alwaysPromptControls>false</alwaysPromptControls>
+                    <controlsLayout>1</controlsLayout>
+                </localResource>
+            </reports>
+            <alwaysPromptControls>false</alwaysPromptControls>
+            <controlsLayout>1</controlsLayout>
+        </localResource>
+    </resource>
+    <resource>
+        <uri>/public/Bosonic/Reports/top_10_traders</uri>
+    </resource>
+</dashboardModelResource>

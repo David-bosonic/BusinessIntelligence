@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reportUnit exportedWithPermissions="false">
+    <folder>/public/Bosonic/Reports</folder>
+    <name>top_10_traders</name>
+    <version>5</version>
+    <label>top 10 traders</label>
+    <description></description>
+    <creationDate>2022-07-15T15:43:13.089-03:00</creationDate>
+    <updateDate>2022-07-15T10:57:08.629-03:00</updateDate>
+    <mainReport>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="main_jrxml.data" xsi:type="fileResource">
+            <folder>/public/Bosonic/Reports/top_10_traders_files</folder>
+            <name>main_jrxml</name>
+            <version>1</version>
+            <label>Main jrxml</label>
+            <creationDate>2022-07-15T15:43:13.089-03:00</creationDate>
+            <updateDate>2022-07-15T10:57:08.587-03:00</updateDate>
+            <fileType>jrxml</fileType>
+        </localResource>
+    </mainReport>
+    <dataSource>
+        <uri>/public/Bosonic/Datasource/Warehouse</uri>
+    </dataSource>
+    <alwaysPromptControls>true</alwaysPromptControls>
+    <controlsLayout>1</controlsLayout>
+</reportUnit>

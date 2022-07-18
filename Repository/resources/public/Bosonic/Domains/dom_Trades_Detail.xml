@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<semanticLayerDataSource exportedWithPermissions="false">
+    <folder>/public/Bosonic/Domains</folder>
+    <name>dom_Trades_Detail</name>
+    <version>6</version>
+    <label>dom_Trades_Detail</label>
+    <description></description>
+    <creationDate>2022-07-15T15:43:12.960-03:00</creationDate>
+    <updateDate>2022-07-13T11:46:01.003-03:00</updateDate>
+    <schema>
+        <localResource
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            exportedWithPermissions="false" dataFile="schema.data" xsi:type="fileResource">
+            <folder>/public/Bosonic/Domains/dom_Trades_Detail_files</folder>
+            <name>schema</name>
+            <version>1</version>
+            <label>schema</label>
+            <description>schema</description>
+            <creationDate>2022-07-15T15:43:12.960-03:00</creationDate>
+            <updateDate>2022-07-13T11:03:54.959-03:00</updateDate>
+            <fileType>xml</fileType>
+        </localResource>
+    </schema>
+    <dataSource>
+        <alias>Warehouse</alias>
+        <dataSourceReference>
+            <uri>/public/Bosonic/Datasource/Warehouse</uri>
+        </dataSourceReference>
+    </dataSource>
+</semanticLayerDataSource>
